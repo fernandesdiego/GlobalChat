@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <div class="col">
+        <div class="card" style="height: 500px;">
+            <div class="card-header">
+                <p class="card-title">Global chat</p>
+            </div>
+            <div class="card-body">        
+                <ul class="list-group pre-scrollable h-100" id="messagesList">            
+                </ul>
+            </div>
+            <div class="card-footer">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg" id="messageInput" placeholder="Message...">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-link" id="sendButton">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="height: 500px;">
+            <div class="card-header">
+                <p class="card-title">Online Users</p>
+            </div>
+            <div class="card-body">        
+                <ul class="list-group pre-scrollable h-100" id="usersList">
+                </ul>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
